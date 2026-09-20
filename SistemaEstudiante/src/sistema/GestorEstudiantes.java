@@ -10,6 +10,7 @@ public class GestorEstudiantes {
         estudiantes = new ArrayList<>();
     }
 
+    //registrar estudiante
     public void registrar(Estudiante estudiante) {
         for (Estudiante e : estudiantes) {
             if (e.getCodigo().equals(estudiante.getCodigo())) {
@@ -50,6 +51,7 @@ public class GestorEstudiantes {
             );
         }
         estudiante.registrarCalificacion(calificacion);
+        
     }
 
 }
